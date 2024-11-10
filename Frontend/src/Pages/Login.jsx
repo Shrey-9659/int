@@ -13,7 +13,7 @@ const Login = () => {
     }
     async function handlerSubmit(e){
         e.preventDefault();
-        const response = await fetch("https://4-h-prac.vercel.app/login", {
+        const response = await fetch("https://int-pi.vercel.app/login", {
             method: "POST",
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify({username, password})

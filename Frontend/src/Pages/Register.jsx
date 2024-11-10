@@ -11,7 +11,7 @@ const Register = () => {
   }
   async function handlerSubmit(e) {
     e.preventDefault();
-    await fetch("https://4-h-prac.vercel.app/register", {
+    await fetch("https://int-pi.vercel.app/register", {
         method : "POST",
         headers : {"Content-Type" : "application/json"},
         body : JSON.stringify({username, password})
