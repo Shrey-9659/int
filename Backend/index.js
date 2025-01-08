@@ -25,6 +25,11 @@ app.use(cors(
   }
 ));
 
+app.get("/api/users", async (req, res) => {
+  const users = await userModel.find();
+  res.json(users);
+})
+
 app.get("/", (req, res) => res.send("Hello World"));
 
 app.post("/register", async (req, res) => {
